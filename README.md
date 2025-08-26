@@ -103,14 +103,14 @@ The main entry point for the Streamlit app. Handles UI rendering, user input, an
 
 ```mermaid
 flowchart TD
-    A[User Input (feedback)] --> B[get_gemini_ui_response (Gemini API call)]
-    B --> C[Gemini JSON Output (list of instructions)]
+    A[User Input feedback] --> B[get_gemini_ui_response Gemini API call]
+    B --> C[Gemini JSON Output list of instructions]
     C --> D{For each instruction}
     D --> E[normalize_component and normalize_property]
     E --> F[Update session state]
     F --> G{Last instruction?}
     G -- No --> D
-    G -- Yes --> H[st.rerun()]
+    G -- Yes --> H[st.rerun]
     H --> I[UI re-renders from session state]
 ```
 
