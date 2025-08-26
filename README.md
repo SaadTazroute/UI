@@ -14,8 +14,8 @@ This project demonstrates a dynamic Streamlit app that adapts its UI in real tim
 
 ### 1. Clone the repository (if needed)
 ```
-git clone <your-repo-url>
-cd <your-project-folder>
+git clone https://github.com/SaadTazroute/UI
+cd UI
 ```
 
 ### 2. Create and activate a virtual environment
