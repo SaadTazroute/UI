@@ -106,7 +106,7 @@ flowchart TD
     A[User Input (feedback)] --> B[get_gemini_ui_response (Gemini API call)]
     B --> C[Gemini JSON Output (list of instructions)]
     C --> D{For each instruction}
-    D --> E[normalize_component / normalize_property]
+    D --> E[normalize_component and normalize_property]
     E --> F[Update session state]
     F --> G{Last instruction?}
     G -- No --> D
